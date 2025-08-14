@@ -1,0 +1,101 @@
+/* _content/ScrumMaster/Pages/Shared/MainLayout.razor.rz.scp.css */
+.page[b-fz1bsdf67h] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-fz1bsdf67h] {
+    flex: 1;
+}
+
+.sidebar[b-fz1bsdf67h] {
+    background-color: steelblue;
+    color:white;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-row[b-fz1bsdf67h] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-fz1bsdf67h]  a, .top-row[b-fz1bsdf67h]  .btn-link {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+        text-decoration: none;
+    }
+
+    .top-row[b-fz1bsdf67h]  a:hover, .top-row[b-fz1bsdf67h]  .btn-link:hover {
+        text-decoration: underline;
+    }
+
+    .top-row[b-fz1bsdf67h]  a:first-child {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row[b-fz1bsdf67h] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-fz1bsdf67h]  a, .top-row[b-fz1bsdf67h]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-fz1bsdf67h] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-fz1bsdf67h] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-fz1bsdf67h] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row.auth[b-fz1bsdf67h]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-fz1bsdf67h], article[b-fz1bsdf67h] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+
+#blazor-error-ui[b-fz1bsdf67h] {
+    color-scheme: light only;
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-fz1bsdf67h] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
